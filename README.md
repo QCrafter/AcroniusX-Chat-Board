@@ -9,7 +9,7 @@ Welcome to **AcroniusX Chat Board**, an open, anonymous chat platform designed f
 
 ## 🚀 Getting Started
 1. Visit [AcroniusX Chat Board](https://acroniusx.pythonanywhere.com/).
-2. Type your message and hit send—no login required!
+2. Type your message and hit enter—no login required!
 3. Respect the community guidelines to keep the chat space friendly and engaging.
 
 ## 📜 Community Guidelines
