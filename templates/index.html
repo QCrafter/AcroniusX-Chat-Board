@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBoard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5; /* Light gray background for a clean look */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333; /* Dark gray for the heading */
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #0078D7; /* Blue color for the hyperlink */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            padding: 10px;
+            width: 80%;
+        }
+
+        label {
+            font-size: 1em;
+            margin-bottom: 5px;
+            color: #555555; /* Medium gray for the label */
+        }
+
+        input[type="text"] {
+            font-stretch: normal;
+            width: 100%; /* Makes the input stretch to 100% of its container's width */
+            height: 70px;
+            box-sizing: border-box; /* Ensures padding and border are included in the width */
+            padding: 10px;
+            border: 1px solid #cccccc; /* Light border color */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 40px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #0078D7; /* Blue border on focus */
+            outline: none;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            background-color: #ffffff; /* White background for the pre element */
+            border: 1px solid #cccccc; /* Light gray border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px;
+            margin: 20px auto;
+            width: 80%;
+            color: #333333; /* Dark gray text */
+            font-size: 1em;
+            font-family: 'Courier New', Courier, monospace; /* Monospace font for content */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+    </style>
+</head>
+<body>
+    <h1>AcroniusX ChatBoard</h1>
+    <a href="https://github.com/QCrafter">Github</a>
+    <form method="post">
+        <label for="msg">Enter message:<br></label>
+        <input type="text" id="msg" name="msg">
+    </form>
+    <pre id="board">Loading...</pre>
+    <script>
+
+    document.querySelector('form').addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent the default form submission (reload)
+        const msgInput = document.getElementById('msg');
+        const text = msgInput.value;
+
+        if (text.trim() !== "") { // Ensure the input is not empty
+            await fetch('/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({ msg: text }) // Send message to the server
+            });
+
+            msgInput.value = ""; // Clear the input field
+        }
+    });
+
+        async function getData() {
+            const url = "https://acroniusx.pythonanywhere.com/text";
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Response status: ${response.status}`);
+                }
+
+                const text = await response.text();
+                return text; // Ensure this returns the actual text, not a Promise.
+            } catch (error) {
+                console.error(error.message);
+                return "Error fetching data."; // Provide fallback text in case of errors.
+            }
+        }
+
+        function displayData() {
+            getData().then(data => {
+                document.getElementById("board").innerHTML = data; // Properly resolve the Promise here.
+            }).catch(error => {
+                document.getElementById("board").innerHTML = "Error displaying data.";
+            });
+        }
+
+        displayData(); // Call the function to load and display the data.
+        setInterval(displayData, 500);
+    </script>
+</body>
+</html>
