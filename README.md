@@ -20,8 +20,9 @@ To foster healthy and productive conversations, please:
 - Respect others’ opinions and viewpoints.
 
 ## 💡 Contribution & Feedback
-AcroniusX Chat Board thrives on community engagement! Have suggestions or ideas? Feel free to share:
-- Bug reports and feature requests via [Issues](https://github.com/QCrafter/AcroniusX-Chat-Board/issues).
+AcroniusX Chat Board thrives on community engagement! Have suggestions or ideas? Feel free to:
+- Share bug reports and feature requests via [Issues](https://github.com/QCrafter/AcroniusX-Chat-Board/issues).
 - Engage with fellow users to improve the experience.
+- Share the link to [AcroniusX Chat Board](https://acroniusx.pythonanywhere.com/) with other people.
 
 Let’s chat, connect, and explore new ideas—**anonymously**. 🚀
