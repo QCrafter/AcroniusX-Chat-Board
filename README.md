@@ -6,6 +6,7 @@ Welcome to **AcroniusX Chat Board**, an open, anonymous chat platform designed f
 - **Anonymous Chat** – No registration required, just jump in and start chatting.
 - **Public Conversations** – Engage in open discussions with users from around the world.
 - **Real-Time Messaging** – Experience instant messaging without delays.
+- **Security** – Built in XSS protection (not included in this repo for securety reasons).
 
 ## 🚀 Getting Started
 1. Visit [AcroniusX Chat Board](https://acroniusx.pythonanywhere.com/).
