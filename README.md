@@ -19,6 +19,10 @@ To foster healthy and productive conversations, please:
 - Keep discussions civil and constructive.
 - Respect others’ opinions and viewpoints.
 
+**I am not responsible for any content written by users on this website!
+If there is anything you believe should be removed because it violates our guidelines,
+please open an issue with the date, time and content of the message.**
+
 ## 💡 Contribution & Feedback
 AcroniusX Chat Board thrives on community engagement! Have suggestions or ideas? Feel free to:
 - Share bug reports and feature requests via [Issues](https://github.com/QCrafter/AcroniusX-Chat-Board/issues).
