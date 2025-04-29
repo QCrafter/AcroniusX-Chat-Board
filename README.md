@@ -1,6 +1,6 @@
 # AcroniusX Chat Board
 
-Welcome to **AcroniusX Chat Board**, an open, anonymous chat platform designed for free expression and meaningful discussions. Whether you're here to connect, share ideas, or engage in real-time conversations, AcroniusX Chat Board provides a space for unfiltered and spontaneous dialogue.
+Welcome to **AcroniusX Chat Board**, an open, anonymous chat platform designed for free expression and meaningful discussions. Whether you're here to connect, share ideas, or engage in real-time conversations, AcroniusX Chat Board provides a space for (almost) unfiltered and spontaneous dialogue.
 
 ## 🌟 Features
 - **Anonymous Chat** – No registration required, just jump in and start chatting.
