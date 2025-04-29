@@ -21,7 +21,7 @@ To foster healthy and productive conversations, please:
 
 ## 💡 Contribution & Feedback
 AcroniusX Chat Board thrives on community engagement! Have suggestions or ideas? Feel free to share:
-- Bug reports and feature requests via [Issues](#) (Insert Feedback/Support link).
+- Bug reports and feature requests via [Issues](https://github.com/QCrafter/AcroniusX-Chat-Board/issues).
 - Engage with fellow users to improve the experience.
 
 Let’s chat, connect, and explore new ideas—**anonymously**. 🚀
